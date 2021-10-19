@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function calculate()
+		{
+			var x= parseInt(document.getElementById("First").value); 
+			var y= parseInt(document.getElementById("Second").value);
+			document.getElementById("Answer").value=(x+y);
+		}
+	</script>
+	<form>
+		<table border="2px" width="30%">
+			<tr>
+				<td>produit</td>
+				<td>prix</td>
+				<td>quantité</td>
+				<td>total</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="p1"></td>
+				<td><input type="text" name="prix1"></td>
+				<td><input type="text" name="q1"></td>
+				<td><input type="text" name="total1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="p2"></td>
+				<td><input type="text" name="prix2"></td>
+				<td><input type="text" name="q2"></td>
+				<td><input type="text" name="total2"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="p3"></td>
+				<td><input type="text" name="prix3"></td>
+				<td><input type="text" name="q3"></td>
+				<td><input type="text" name="total3"></td>
+			</tr>
+		</table>
+		<input onclick="calculate()" type="button"  value="Addition"> 
+		<input type="text" name="totaux">
+	</form>
+</body>
+</html>
